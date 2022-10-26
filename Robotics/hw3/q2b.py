@@ -49,7 +49,7 @@ def A_STAR_SEARCH(V, s, g, N, w, h):
     return []
 
 # Read image from disk using PIL
-occupancy_map_img = Image.open('occupancy_map.png')
+occupancy_map_img = Image.open(r'C:\Users\Shaun\College\Fall 2022\Mobile_Robotics\Robotics\hw3\occupancy_map.png')
 
 # Interpret this image as a numpy array, and threshold its values to → {0,1}
 M = (np.asarray(occupancy_map_img) > 0).astype(int)
